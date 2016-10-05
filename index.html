@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Hue Home</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/jquery.colorpickersliders.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Light</a>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="section">
+      <div class="card white">
+        <div class="card-content">
+              <span class="card-title">All Lights</span>
+              <br>
+              <a id="all_off" class="waves-effect waves-light red btn lighten-1"><i class="material-icons left">settings_power</i>All Off</a>
+              <br>
+              <div style= "line-height:3" class ="row" id="lights-container">
+
+              </div>
+
+            </div>
+      </div>
+
+      <div class="section">
+        <div class="card white">
+          <div class="card-content">
+                <span class="card-title">Light State</span>
+
+              <div class="row">
+                <div class="col s6" >
+                  <span>Ligths </span><br>
+                  <div id="lights"> </div>
+                </div>
+                <div class="col s6">
+                  <span>Groups </span><br>
+                  <div id="groups"> </div>
+                </div>
+              </div>
+
+              <div class="card indigo lighten-5">
+                <br>
+                <span class="hsl-demo"></span>
+                <br>
+                <div class="row">
+                  <div class="col s1"> Brightness</div>
+                  <div class="col s11">
+                    <p class="range-field">
+                    <input type="range" id="r_brightness" min="1" max="254" onchange="stateChange('bright')"/>
+                  </p>
+                  </div>
+                </div>
+                <br>
+                 <div class="row">
+                   <div class="col s1">
+                     Effect
+                   </div>
+                   <div class="col s11">
+                     <div class="switch">
+                        <label>
+                          None
+                          <input type="checkbox" id="effect_switch">
+                          <span class="lever"></span>
+                          Colorloop
+                        </label>
+                      </div>
+                   </div>
+                 </div>
+
+              </div>
+
+              </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+
+    <div class="footer-copyright">
+      <div class="container">
+        AVSD
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/tinycolor.js"></script>
+  <script src="js/jquery.colorpickersliders.js"></script>
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
